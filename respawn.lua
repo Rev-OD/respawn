@@ -14,7 +14,9 @@ function main()
         local reconInfo = {
             ['status'] = imgui.ImBool(false),
         }
-        if reconInfo['status'].v then 
+        if not reconInfo['status'].v then
+            z = z
+        else
             z = z - 19
         end
         
